@@ -14,21 +14,22 @@
     </div>
 {{- end -}}
 <script>
-    // document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
         let button = document.getElementById('tocButton');
-        let hide = document.getElementById("hide");
-        let contents=document.getElementById("contents");
-        button.addEventListener("click", function() {
-        if (hide.style.display!='block') {
-            hide.style.display='block'
+        let hide = document.getElementById('hide');
+        let contents = document.getElementById('contents');
+
+        if (button) {
+            button.addEventListener('click', function() {
+                if (hide.style.display !== 'block') {
+                    hide.style.display = 'block';
+                } else {
+                    hide.style.display = 'none';
+                    contents.style.color = 'rgb(96, 134, 180)';
+                }
+            });
         } else {
-            hide.style.display='none'
-            contents.style.color='rgb(96, 134, 180)'
+            console.error("Element with id 'tocButton' not found.");
         }
-        });
-    // });
-
-
-
-
+    });
 </script>

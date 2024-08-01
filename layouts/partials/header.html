@@ -1,7 +1,7 @@
 <nav class="navbar is-light" role="navigation">
     <div class="container">
         <div class="navbar-brand">
-            <a href="/code_showcase/" title="home" class="navbar-item">
+            <a href="{{ .Site.BaseURL }}" title="home" class="navbar-item">
                 <span class="logo">
                     <h1>{{ .Site.Title }}</h1>
                 </span>
@@ -39,8 +39,11 @@
             </a>
         </div>
 
-        <script src="/js/fuse.min.js"></script> <!-- download and copy over fuse.min.js file from fusejs.io -->
-        <script src="/js/fastsearch.js"></script>
+        <script>
+            var baseURL = "{{ .Site.BaseURL }}";
+        </script>
+        <script src="{{ .Site.BaseURL }}js/fuse.min.js"></script> <!-- download and copy over fuse.min.js file from fusejs.io -->
+        <script src="{{ .Site.BaseURL }}js/fastsearch.js"></script>
 
     </div>
 </nav>

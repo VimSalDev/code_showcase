@@ -1,15 +1,15 @@
-baseURL = "https://vimsaldev.github.io/"
+baseURL = "https://vimsaldev.github.io/code_showcase/"
 languageCode = 'en-us'
 title = "Code Showcase"
 
 [params]
 author = "VimSalDev"
 description = "Code Showcase"
-authorImage = "/images/cat.png"
+authorImage = "/code_shoecases/images/cat.png"
 paginate = 5 
 Title = "Code Showcase"
 content = "I'm Miguel"
-imageUrl = "/images/cat.png"
+imageUrl = "/code_shoecases/images/cat.png"
 
 # To add a new social icon 
 # More social icons can be found in JuiceBar\layouts\partials\svg.html.

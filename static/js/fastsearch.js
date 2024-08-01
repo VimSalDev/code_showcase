@@ -109,7 +109,7 @@ function fetchJSONFile(path, callback) {
       }
     }
   };
-  httpRequest.open('GET', path);
+  httpRequest.open('GET',baseURL  + path, true);
   httpRequest.send(); 
 }
 
