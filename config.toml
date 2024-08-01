@@ -1,19 +1,46 @@
-baseURL = 'https://vimsaldev.github.io/code_showcase/'
-languageCode = 'en'
+baseURL = "https://vimsaldev.github.io/code_showcase/"
+languageCode = 'en-us'
 title = "Code Showcase"
 
 [params]
 author = "VimSalDev"
 description = "Code Showcase"
-authorImage = "/images/dev_cat.jpg"
-paginate = 5
-
+authorImage = "/images/cat.png"
+paginate = 5 
 Title = "Code Showcase"
 content = "I'm Miguel"
-imageUrl = "/images/dev_cat.jpg"
+imageUrl = "/images/cat.png"
+
+# To add a new social icon 
+# More social icons can be found in JuiceBar\layouts\partials\svg.html.
+# [[params.social]]
+# name = "Github"
+# url = "https://github.com/hotjuicew"
+# [[params.social]]
+# name = "telegram"
+# url = "https://t.me/Hotjuice"
+# [[params.social]]
+# name = "twitter"
+# url = "https://twitter.com/hotjuicee"
+# [[params.social]]
+# name = "email"
+# url = "mailto:hotjuicew@outlook.com"
+# [[params.social]]
+# name = "instagram"
+# url = "your_url"
+# [[params.social]]
+# name = "mastodon"
+# url = "your_url"
+# [[params.social]]
+# name = "reddit"
+# url = "your_url"
+# [[params.social]]
+# name = "stackoverflow"
+# url = "your_url"
 
 [taxonomies]
 category = "categories"
+tag = "tags"
 
 # To add a new navigation link
 [[menu.main]]
@@ -26,17 +53,18 @@ url = "/post"
 name = "Categories"
 url = "/categories"
 
-[params.giscus]
-repo = "hotjuicew/blog"
-repoID = "R_kgDOHHQOuw"
-category = "Announcements"
-categoryID = "DIC_kwDOHHQOu84CWCQ3"
-mapping = "og:title"
-reactionsEnabled = "1"
-emitMetadata = "0"
-inputPosition = "bottom"
-lang = "en"
-loading = "lazy"
+# If using the giscus commenting system
+# [params.giscus]
+# repo = "hotjuicew/blog"
+# repoID = "R_kgDOHHQOuw"
+# category = "Announcements"
+# categoryID = "DIC_kwDOHHQOu84CWCQ3"
+# mapping = "og:title"
+# reactionsEnabled = "1"
+# emitMetadata = "0"
+# inputPosition = "bottom"
+# lang = "en"
+# loading = "lazy"
 
 # Used for outputting the documentation (required).
 [outputs]
