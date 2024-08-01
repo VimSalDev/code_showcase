@@ -5,11 +5,11 @@ title = "Code Showcase"
 [params]
 author = "VimSalDev"
 description = "Code Showcase"
-authorImage = "/code_shoecases/images/cat.png"
+authorImage = "/code_showcase/images/cat.png"
 paginate = 5 
 Title = "Code Showcase"
 content = "I'm Miguel"
-imageUrl = "/code_shoecases/images/cat.png"
+imageUrl = "/code_showcase/images/cat.png"
 
 # To add a new social icon 
 # More social icons can be found in JuiceBar\layouts\partials\svg.html.
