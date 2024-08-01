@@ -1,0 +1,46 @@
+baseURL = 'https://localhost:1313/'
+languageCode = 'en'
+title = "Code Showcase"
+
+[params]
+author = "VimSalDev"
+description = "Code Showcase"
+authorImage = "/images/cat.png"
+paginate = 5
+
+Title = "Code Showcase"
+content = "I'm Miguel"
+imageUrl = "/images/cat.png"
+
+[taxonomies]
+category = "categories"
+
+# To add a new navigation link
+[[menu.main]]
+name = "About"
+url = "/about"
+[[menu.main]]
+name = "Blog"
+url = "/post"
+[[menu.main]]
+name = "Categories"
+url = "/categories"
+
+[params.giscus]
+repo = "hotjuicew/blog"
+repoID = "R_kgDOHHQOuw"
+category = "Announcements"
+categoryID = "DIC_kwDOHHQOu84CWCQ3"
+mapping = "og:title"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+lang = "en"
+loading = "lazy"
+
+# Used for outputting the documentation (required).
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+
+
