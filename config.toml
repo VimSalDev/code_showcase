@@ -5,12 +5,12 @@ title = "Code Showcase"
 [params]
 author = "VimSalDev"
 description = "Code Showcase"
-authorImage = "/images/cat.png"
+authorImage = "/images/dev_cat.jpg"
 paginate = 5
 
 Title = "Code Showcase"
 content = "I'm Miguel"
-imageUrl = "/images/cat.png"
+imageUrl = "/images/dev_cat.jpg"
 
 [taxonomies]
 category = "categories"
