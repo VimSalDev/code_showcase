@@ -50,7 +50,7 @@ Contributions are welcome. Please open an issue or submit a pull request to impr
 
 ## Contact
 
-- GitHub: [yourusername](https://github.com/VimSalDev)
+- GitHub: [VimSalDev](https://github.com/VimSalDev)
 
 ---
 
