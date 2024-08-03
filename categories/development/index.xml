@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Code Showcase</title>
+    <link>https://vimsaldev.github.io/code_showcase/categories/development/</link>
+    <description>Recent content in Development on Code Showcase</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Aug 2024 00:19:18 -0600</lastBuildDate><atom:link href="https://vimsaldev.github.io/code_showcase/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dev</title>
+      <link>https://vimsaldev.github.io/code_showcase/post/dev/</link>
+      <pubDate>Thu, 01 Aug 2024 00:19:18 -0600</pubDate>
+      
+      <guid>https://vimsaldev.github.io/code_showcase/post/dev/</guid>
+      <description>Test2</description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://vimsaldev.github.io/code_showcase/post/test/</link>
+      <pubDate>Thu, 01 Aug 2024 00:08:13 -0600</pubDate>
+      
+      <guid>https://vimsaldev.github.io/code_showcase/post/test/</guid>
+      <description>Test</description>
+    </item>
+    
+  </channel>
+</rss>

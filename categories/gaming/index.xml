@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gaming on Code Showcase</title>
+    <link>https://vimsaldev.github.io/code_showcase/categories/gaming/</link>
+    <description>Recent content in Gaming on Code Showcase</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Aug 2024 07:53:44 -0600</lastBuildDate><atom:link href="https://vimsaldev.github.io/code_showcase/categories/gaming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test3</title>
+      <link>https://vimsaldev.github.io/code_showcase/post/test3/</link>
+      <pubDate>Thu, 01 Aug 2024 07:53:44 -0600</pubDate>
+      
+      <guid>https://vimsaldev.github.io/code_showcase/post/test3/</guid>
+      <description>TetsV3</description>
+    </item>
+    
+  </channel>
+</rss>

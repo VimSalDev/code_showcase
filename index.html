@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta name="generator" content="Hugo 0.119.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Code Showcase</title>
+    <meta name="description"
+        content="Code Showcase">
+    <link rel="canonical" href="https://vimsaldev.github.io/code_showcase/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    
+    <link rel="stylesheet" href="https://vimsaldev.github.io/code_showcase/scss/style.min.aa7209164f013c6883aa54384ea45a46e582eacf9a17e9565badebd557dd1059.css">
+
+    <meta property="og:title" content="Code Showcase" />
+<meta property="og:description" content="Code Showcase" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://vimsaldev.github.io/code_showcase/" /><meta property="og:site_name" content="Code Showcase" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Code Showcase"/>
+<meta name="twitter:description" content="Code Showcase"/>
+
+    
+    
+    
+
+</head><body><nav class="navbar is-light" role="navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="https://vimsaldev.github.io/code_showcase/" title="home" class="navbar-item">
+                <span class="logo">
+                    <h1>Code Showcase</h1>
+                </span>
+            </a>
+
+            
+            <a id="theme-toggle" class="theme-toggle" href="#">
+                <img src="https://vimsaldev.github.io/code_showcase/svg/sun.svg" alt="sun icon" class="theme-icon" />
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                
+                <a href="/code_showcase/about" class="navbar-item">About</a>
+                
+                <a href="/code_showcase/post" class="navbar-item">Blog</a>
+                
+                <a href="/code_showcase/categories" class="navbar-item">Categories</a>
+                
+            </div>
+
+        </div>
+        <div class="search">
+            <div id="fastSearch">
+                <input id="searchInput" tabindex="0" placeholder="Search..">
+                <ul id="searchResults">
+
+                </ul>
+            </div>
+            <a id="search-btn" style="display: inline-block;" href="# ">
+                <div class="icon-search"><svg class="search-svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
+            </a>
+        </div>
+
+        <script>
+            var baseURL = "https:\/\/vimsaldev.github.io\/code_showcase\/";
+        </script>
+        <script src="https://vimsaldev.github.io/code_showcase/js/fuse.min.js"></script> 
+        <script src="https://vimsaldev.github.io/code_showcase/js/fastsearch.js"></script>
+
+    </div>
+</nav>
+
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        var burger = document.querySelector('.navbar-burger');
+        burger.addEventListener('click', function() {
+            burger.classList.toggle('is-active');
+            document.querySelector('.navbar-menu').classList.toggle('is-active');
+        });
+    });
+
+    
+    function setTheme(theme) {
+        let body = document.body;
+        let themeIcon = document.querySelector(".theme-icon");
+        if (theme === "dark") {
+            body.classList.add("dark-mode");
+            themeIcon.src = "https:\/\/vimsaldev.github.io\/code_showcase\/svg/moon.svg";
+            themeIcon.alt = "moon icon";
+        } else {
+            body.classList.remove("dark-mode");
+            themeIcon.src = "https:\/\/vimsaldev.github.io\/code_showcase\/svg/sun.svg";
+            themeIcon.alt = "sun icon";
+        }
+        
+        localStorage.setItem("theme", theme);
+    }
+
+    
+    let theme = localStorage.getItem("theme") || "light";
+    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (isDarkMode) {
+        
+        setTheme('dark');
+
+    } else {
+        
+        setTheme('light');
+    }
+    setTheme(theme);
+
+    
+    document.getElementById("theme-toggle").addEventListener("click", function() {
+        if (theme === "light") {
+            theme = "dark";
+        } else {
+            theme = "light";
+        }
+        setTheme(theme);
+    });
+
+
+
+</script>
+
+</header><main>
+<article>
+    <div class="is-centered">
+            <div class="title subtitle heading is-6">
+                <div id="home-box" >
+                            
+                            <div class="avatar-container">
+                                <img src="/code_showcase/images/cat.png" class="author-avatar">
+
+                            </div>
+                            
+
+
+
+                        <h1 id="home-title" class="title is-1 ">Code Showcase</h1>
+                    <div class="description column content typewriter-effect">
+                        <div class="text" id="typewriter-text"> I&#39;m Miguel</div>
+
+                    </div>
+                    <script>
+                        const typeWriter = document.getElementById('typewriter-text');
+                        typeWriter.style.setProperty('--characters', typeWriter.innerHTML.length);
+                    </script>
+
+                    <div class="social-icon">
+
+                        
+
+                    </div>
+
+                </div>
+            </div>
+
+    </div></article>
+<div class="summary">
+    
+        <article class="post">
+  <div class="single-container column is-centered">
+    <div class="archive" id="post-container">
+      <header class="post-header">
+        <h1 class="post-title hover-underline-animation"><a class="post-link" href="/code_showcase/post/3d_image_slider/">3D Image Slider</a></h1>
+       
+       
+      </header>
+      <div class="post-content">
+        <div class="excerpt post-summary">
+          This example demonstrates a 3D rotating cube using CSS animations and transformations. The cube rotates around the Y-axis, and each side of the cube displays a different image. HTML Code &lt;div class=&#34;container&#34;&gt; &lt;div class=&#34;cube&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmW239ythzhEUCVHTDxSzCVaB8wkA16E4hiF6MmNwgRSin?auto=format&amp;w=1500&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmQHKeemS2YCLkdTBgQxyFbgwE2RHFr1F51AVhQFFcKCAy?auto=format&amp;w=1500&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmS3Y6cMYsRAbXF9t5zmRWwqNttpX65Ev9DvykuHsBCFb6?auto=format&amp;w=1500&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmSRo6VjDToFt3xUhNZV2qWBDDq4UPSEsbaq8Es2B5aP1i?auto=format&amp;w=1500&#34;&gt; &lt;/div&gt; &lt;/div&gt; CSS Code img { position: absolute; width: 240px; height: 240px; backface-visibility: hidden; } .container { width: 240px; height: 240px; perspective: 800px; } .container:before { content: &#39;&#39;; width: 100%; height: 100%; box-shadow: 0 0 75px 20px #0000001a, inset 0 0 350px 350px #0000001a; position: absolute; top: 90px; left: 0px; transform: rotateX(95deg) translateZ(-80px); animation: rotateShadow 16s infinite; } @keyframes rotateShadow { 0% { transform: rotateX(95deg) translateZ(-80px) rotateZ(360deg); } 25% { transform: rotateX(95deg) translateZ(-80px) rotateZ(270deg); } 50% { transform: rotateX(95deg) translateZ(-80px) rotateZ(180deg); } 75% { transform: rotateX(95deg) translateZ(-80px) rotateZ(90deg); } 100% { transform: rotateX(95deg) translateZ(-80px) rotateZ(0deg); } } .
+        </div>
+        
+        <div class="post-time-container">
+          <span class="post-time"> 2024-08-02 </span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</article>
+
+    
+        <article class="post">
+  <div class="single-container column is-centered">
+    <div class="archive" id="post-container">
+      <header class="post-header">
+        <h1 class="post-title hover-underline-animation"><a class="post-link" href="/code_showcase/post/test3/">Test3</a></h1>
+       
+       
+      </header>
+      <div class="post-content">
+        <div class="excerpt post-summary">
+          TetsV3
+        </div>
+        
+        <div class="post-time-container">
+          <span class="post-time"> 2024-08-01 </span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</article>
+
+    
+        <article class="post">
+  <div class="single-container column is-centered">
+    <div class="archive" id="post-container">
+      <header class="post-header">
+        <h1 class="post-title hover-underline-animation"><a class="post-link" href="/code_showcase/post/dev/">Dev</a></h1>
+       
+       
+      </header>
+      <div class="post-content">
+        <div class="excerpt post-summary">
+          Test2
+        </div>
+        
+        <div class="post-time-container">
+          <span class="post-time"> 2024-08-01 </span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</article>
+
+    
+        <article class="post">
+  <div class="single-container column is-centered">
+    <div class="archive" id="post-container">
+      <header class="post-header">
+        <h1 class="post-title hover-underline-animation"><a class="post-link" href="/code_showcase/post/test/">Test</a></h1>
+       
+       
+      </header>
+      <div class="post-content">
+        <div class="excerpt post-summary">
+          Test
+        </div>
+        
+        <div class="post-time-container">
+          <span class="post-time"> 2024-08-01 </span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</article>
+
+    
+    <hr>
+<section class="pagination" >
+    
+    <label class="pag-link">Page 1 of 1</label>
+    
+</section>
+
+</div>
+
+        </main><footer class="footer">
+    <div class="content has-text-centered">
+    <span>&copy; 2024 <a href="https://vimsaldev.github.io/code_showcase/">Code Showcase</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" target="_blank">Hugo</a> &
+        <a href="https://github.com/hotjuicew/hugo-JuiceBar" target="_blank">JuiceBar</a>
+    </span>
+    </div>
+  </footer></body>
+</html>
+

@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>3D Image Slider | Code Showcase</title>
+    <meta name="description"
+        content="This example demonstrates a 3D rotating cube using CSS animations and transformations. The cube rotates around the Y-axis, and each side of the cube displays a different image. HTML Code &lt;div class=&#34;container&#34;&gt; &lt;div class=&#34;cube&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmW239ythzhEUCVHTDxSzCVaB8wkA16E4hiF6MmNwgRSin?auto=format&amp;w=1500&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmQHKeemS2YCLkdTBgQxyFbgwE2RHFr1F51AVhQFFcKCAy?auto=format&amp;w=1500&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmS3Y6cMYsRAbXF9t5zmRWwqNttpX65Ev9DvykuHsBCFb6?auto=format&amp;w=1500&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmSRo6VjDToFt3xUhNZV2qWBDDq4UPSEsbaq8Es2B5aP1i?auto=format&amp;w=1500&#34;&gt; &lt;/div&gt; &lt;/div&gt; CSS Code img { position: absolute; width: 240px; height: 240px; backface-visibility: hidden; } .container { width: 240px; height: 240px; perspective: 800px; } .container:before { content: &#39;&#39;; width: 100%; height: 100%; box-shadow: 0 0 75px 20px #0000001a, inset 0 0 350px 350px #0000001a; position: absolute; top: 90px; left: 0px; transform: rotateX(95deg) translateZ(-80px); animation: rotateShadow 16s infinite; } @keyframes rotateShadow { 0% { transform: rotateX(95deg) translateZ(-80px) rotateZ(360deg); } 25% { transform: rotateX(95deg) translateZ(-80px) rotateZ(270deg); } 50% { transform: rotateX(95deg) translateZ(-80px) rotateZ(180deg); } 75% { transform: rotateX(95deg) translateZ(-80px) rotateZ(90deg); } 100% { transform: rotateX(95deg) translateZ(-80px) rotateZ(0deg); } } .">
+    <link rel="canonical" href="https://vimsaldev.github.io/code_showcase/post/3d_image_slider/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    
+    <link rel="stylesheet" href="https://vimsaldev.github.io/code_showcase/scss/style.min.aa7209164f013c6883aa54384ea45a46e582eacf9a17e9565badebd557dd1059.css">
+
+    <meta property="og:title" content="3D Image Slider" />
+<meta property="og:description" content="This example demonstrates a 3D rotating cube using CSS animations and transformations. The cube rotates around the Y-axis, and each side of the cube displays a different image. HTML Code &lt;div class=&#34;container&#34;&gt; &lt;div class=&#34;cube&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmW239ythzhEUCVHTDxSzCVaB8wkA16E4hiF6MmNwgRSin?auto=format&amp;w=1500&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmQHKeemS2YCLkdTBgQxyFbgwE2RHFr1F51AVhQFFcKCAy?auto=format&amp;w=1500&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmS3Y6cMYsRAbXF9t5zmRWwqNttpX65Ev9DvykuHsBCFb6?auto=format&amp;w=1500&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmSRo6VjDToFt3xUhNZV2qWBDDq4UPSEsbaq8Es2B5aP1i?auto=format&amp;w=1500&#34;&gt; &lt;/div&gt; &lt;/div&gt; CSS Code img { position: absolute; width: 240px; height: 240px; backface-visibility: hidden; } .container { width: 240px; height: 240px; perspective: 800px; } .container:before { content: &#39;&#39;; width: 100%; height: 100%; box-shadow: 0 0 75px 20px #0000001a, inset 0 0 350px 350px #0000001a; position: absolute; top: 90px; left: 0px; transform: rotateX(95deg) translateZ(-80px); animation: rotateShadow 16s infinite; } @keyframes rotateShadow { 0% { transform: rotateX(95deg) translateZ(-80px) rotateZ(360deg); } 25% { transform: rotateX(95deg) translateZ(-80px) rotateZ(270deg); } 50% { transform: rotateX(95deg) translateZ(-80px) rotateZ(180deg); } 75% { transform: rotateX(95deg) translateZ(-80px) rotateZ(90deg); } 100% { transform: rotateX(95deg) translateZ(-80px) rotateZ(0deg); } } ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vimsaldev.github.io/code_showcase/post/3d_image_slider/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-08-02T21:55:28-06:00" />
+<meta property="article:modified_time" content="2024-08-02T21:55:28-06:00" /><meta property="og:site_name" content="Code Showcase" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="3D Image Slider"/>
+<meta name="twitter:description" content="This example demonstrates a 3D rotating cube using CSS animations and transformations. The cube rotates around the Y-axis, and each side of the cube displays a different image. HTML Code &lt;div class=&#34;container&#34;&gt; &lt;div class=&#34;cube&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmW239ythzhEUCVHTDxSzCVaB8wkA16E4hiF6MmNwgRSin?auto=format&amp;w=1500&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmQHKeemS2YCLkdTBgQxyFbgwE2RHFr1F51AVhQFFcKCAy?auto=format&amp;w=1500&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmS3Y6cMYsRAbXF9t5zmRWwqNttpX65Ev9DvykuHsBCFb6?auto=format&amp;w=1500&#34;&gt; &lt;img src=&#34;https://assets.lummi.ai/assets/QmSRo6VjDToFt3xUhNZV2qWBDDq4UPSEsbaq8Es2B5aP1i?auto=format&amp;w=1500&#34;&gt; &lt;/div&gt; &lt;/div&gt; CSS Code img { position: absolute; width: 240px; height: 240px; backface-visibility: hidden; } .container { width: 240px; height: 240px; perspective: 800px; } .container:before { content: &#39;&#39;; width: 100%; height: 100%; box-shadow: 0 0 75px 20px #0000001a, inset 0 0 350px 350px #0000001a; position: absolute; top: 90px; left: 0px; transform: rotateX(95deg) translateZ(-80px); animation: rotateShadow 16s infinite; } @keyframes rotateShadow { 0% { transform: rotateX(95deg) translateZ(-80px) rotateZ(360deg); } 25% { transform: rotateX(95deg) translateZ(-80px) rotateZ(270deg); } 50% { transform: rotateX(95deg) translateZ(-80px) rotateZ(180deg); } 75% { transform: rotateX(95deg) translateZ(-80px) rotateZ(90deg); } 100% { transform: rotateX(95deg) translateZ(-80px) rotateZ(0deg); } } ."/>
+
+    
+    
+    
+
+</head><body><nav class="navbar is-light" role="navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="https://vimsaldev.github.io/code_showcase/" title="home" class="navbar-item">
+                <span class="logo">
+                    <h1>Code Showcase</h1>
+                </span>
+            </a>
+
+            
+            <a id="theme-toggle" class="theme-toggle" href="#">
+                <img src="https://vimsaldev.github.io/code_showcase/svg/sun.svg" alt="sun icon" class="theme-icon" />
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                
+                <a href="/code_showcase/about" class="navbar-item">About</a>
+                
+                <a href="/code_showcase/post" class="navbar-item">Blog</a>
+                
+                <a href="/code_showcase/categories" class="navbar-item">Categories</a>
+                
+            </div>
+
+        </div>
+        <div class="search">
+            <div id="fastSearch">
+                <input id="searchInput" tabindex="0" placeholder="Search..">
+                <ul id="searchResults">
+
+                </ul>
+            </div>
+            <a id="search-btn" style="display: inline-block;" href="# ">
+                <div class="icon-search"><svg class="search-svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
+            </a>
+        </div>
+
+        <script>
+            var baseURL = "https:\/\/vimsaldev.github.io\/code_showcase\/";
+        </script>
+        <script src="https://vimsaldev.github.io/code_showcase/js/fuse.min.js"></script> 
+        <script src="https://vimsaldev.github.io/code_showcase/js/fastsearch.js"></script>
+
+    </div>
+</nav>
+
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        var burger = document.querySelector('.navbar-burger');
+        burger.addEventListener('click', function() {
+            burger.classList.toggle('is-active');
+            document.querySelector('.navbar-menu').classList.toggle('is-active');
+        });
+    });
+
+    
+    function setTheme(theme) {
+        let body = document.body;
+        let themeIcon = document.querySelector(".theme-icon");
+        if (theme === "dark") {
+            body.classList.add("dark-mode");
+            themeIcon.src = "https:\/\/vimsaldev.github.io\/code_showcase\/svg/moon.svg";
+            themeIcon.alt = "moon icon";
+        } else {
+            body.classList.remove("dark-mode");
+            themeIcon.src = "https:\/\/vimsaldev.github.io\/code_showcase\/svg/sun.svg";
+            themeIcon.alt = "sun icon";
+        }
+        
+        localStorage.setItem("theme", theme);
+    }
+
+    
+    let theme = localStorage.getItem("theme") || "light";
+    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (isDarkMode) {
+        
+        setTheme('dark');
+
+    } else {
+        
+        setTheme('light');
+    }
+    setTheme(theme);
+
+    
+    document.getElementById("theme-toggle").addEventListener("click", function() {
+        if (theme === "light") {
+            theme = "dark";
+        } else {
+            theme = "light";
+        }
+        setTheme(theme);
+    });
+
+
+
+</script>
+
+</header><main>
+<div class="single-container">
+    <div class="archive">
+        <h1 class="title is-1">3D Image Slider</h1>
+        <div class="title subtitle heading is-6">
+            <div class="author-info columns is-vcentered">
+                <div class="column">
+                    <div class="columns is-vcentered is-mobile">
+                        
+                        <div class="column is-narrow">
+                            <img src="/code_showcase/images/cat.png" class="author-image">
+                        </div>
+                        
+                        <div class="column">
+                            <p>VimSalDev</p>
+                            <p><time>August 2, 2024</time>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-categories-container">
+                    <a href="/code_showcase/categories/image_slider">Image_Slider</a>
+                </div>
+            </div>
+        </div>
+        <div class="content article-content">
+            <div class="toc-container">
+                
+    <div class="post-toc">
+        
+            <aside>
+                <button id="tocButton" ><h4 id="contents" style="margin-left: 1vw;color:rgb(96, 134, 180);margin-bottom: 0;">CONTENTS</h4></button>
+                <div id="hide"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#html-code">HTML Code</a></li>
+    <li><a href="#css-code">CSS Code</a></li>
+    <li><a href="#css-code-explanation">CSS Code Explanation</a></li>
+    <li><a href="#html-structure">HTML Structure</a></li>
+  </ul>
+</nav></div>
+            </aside>
+        
+    </div><script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let button = document.getElementById('tocButton');
+        let hide = document.getElementById('hide');
+        let contents = document.getElementById('contents');
+
+        if (button) {
+            button.addEventListener('click', function() {
+                if (hide.style.display !== 'block') {
+                    hide.style.display = 'block';
+                } else {
+                    hide.style.display = 'none';
+                    contents.style.color = 'rgb(96, 134, 180)';
+                }
+            });
+        } else {
+            console.error("Element with id 'tocButton' not found.");
+        }
+    });
+</script>
+            </div>
+            
+
+<p style="margin-bottom: 30px;">This example demonstrates a 3D rotating cube using CSS animations and transformations. The cube rotates around the Y-axis, and each side of the cube displays a different image.
+</p>
+
+
+
+
+
+<style>
+    .container:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 75px 20px #0000001a, inset 0 0 350px 350px #0000001a;
+        position: absolute;
+        top: 90px;
+        left: 0px;
+        transform: rotateX(95deg) translateZ(-80px);
+        animation: rotateShadow 16s infinite;
+    }
+
+    @keyframes rotateShadow {
+        0% {
+            transform: rotateX(95deg) translateZ(-80px) rotateZ(360deg);
+        }
+
+        25% {
+            transform: rotateX(95deg) translateZ(-80px) rotateZ(270deg);
+        }
+
+        50% {
+            transform: rotateX(95deg) translateZ(-80px) rotateZ(180deg);
+        }
+
+        75% {
+            transform: rotateX(95deg) translateZ(-80px) rotateZ(90deg);
+        }
+
+        100% {
+            transform: rotateX(95deg) translateZ(-80px) rotateZ(0deg);
+        }
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotateY(0deg);
+        }
+
+        25% {
+            transform: rotateY(90deg);
+        }
+
+        50% {
+            transform: rotateY(180deg);
+        }
+
+        75% {
+            transform: rotateY(270deg);
+        }
+
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+</style>
+
+<div class="container" style="width: 240px; height: 240px; perspective: 800px;">
+    <div class="cube" style="height: 100%; width: 100%; position: relative; transform-style: preserve-3d; transform: all 0.8s ease-in-out; animation: rotate 16s infinite;">
+        <img src="https://assets.lummi.ai/assets/QmW239ythzhEUCVHTDxSzCVaB8wkA16E4hiF6MmNwgRSin?auto=format&w=1500" style="position: absolute; width: 240px; height: 240px; backface-visibility: hidden; transform: rotateY(0deg) translateZ(120px);">
+        <img src="https://assets.lummi.ai/assets/QmQHKeemS2YCLkdTBgQxyFbgwE2RHFr1F51AVhQFFcKCAy?auto=format&w=1500" style="position: absolute; width: 240px; height: 240px; backface-visibility: hidden; transform: rotateY(90deg) translateZ(120px);">
+        <img src="https://assets.lummi.ai/assets/QmS3Y6cMYsRAbXF9t5zmRWwqNttpX65Ev9DvykuHsBCFb6?auto=format&w=1500" style="position: absolute; width: 240px; height: 240px; backface-visibility: hidden; transform: rotateY(-90deg) translateZ(120px);">
+        <img src="https://assets.lummi.ai/assets/QmSRo6VjDToFt3xUhNZV2qWBDDq4UPSEsbaq8Es2B5aP1i?auto=format&w=1500" style="position: absolute; width: 240px; height: 240px; backface-visibility: hidden; transform: rotateY(180deg) translateZ(120px);">
+    </div>
+</div>
+
+<br>
+<br>
+
+
+
+<h2 id="html-code">HTML Code</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cube&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://assets.lummi.ai/assets/QmW239ythzhEUCVHTDxSzCVaB8wkA16E4hiF6MmNwgRSin?auto=format&amp;w=1500&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://assets.lummi.ai/assets/QmQHKeemS2YCLkdTBgQxyFbgwE2RHFr1F51AVhQFFcKCAy?auto=format&amp;w=1500&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://assets.lummi.ai/assets/QmS3Y6cMYsRAbXF9t5zmRWwqNttpX65Ev9DvykuHsBCFb6?auto=format&amp;w=1500&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://assets.lummi.ai/assets/QmSRo6VjDToFt3xUhNZV2qWBDDq4UPSEsbaq8Es2B5aP1i?auto=format&amp;w=1500&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><h2 id="css-code">CSS Code</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">img</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">240</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">240</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">backface-visibility</span>: <span style="color:#66d9ef">hidden</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">container</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">240</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">240</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">perspective</span>: <span style="color:#ae81ff">800</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">container</span>:<span style="color:#a6e22e">before</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">box-shadow</span>: 
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">75</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#000000</span><span style="color:#ae81ff">1</span>a,
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">inset</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">350</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">350</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#000000</span><span style="color:#ae81ff">1</span>a;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">90</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">transform</span>: rotateX(<span style="color:#ae81ff">95</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">-80</span><span style="color:#66d9ef">px</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">animation</span>: rotateShadow <span style="color:#ae81ff">16</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">infinite</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">rotateShadow</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">0</span><span style="color:#f92672">%</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">transform</span>: rotateX(<span style="color:#ae81ff">95</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">-80</span><span style="color:#66d9ef">px</span>) rotateZ(<span style="color:#ae81ff">360</span><span style="color:#66d9ef">deg</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">25</span><span style="color:#f92672">%</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">transform</span>: rotateX(<span style="color:#ae81ff">95</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">-80</span><span style="color:#66d9ef">px</span>) rotateZ(<span style="color:#ae81ff">270</span><span style="color:#66d9ef">deg</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">50</span><span style="color:#f92672">%</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">transform</span>: rotateX(<span style="color:#ae81ff">95</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">-80</span><span style="color:#66d9ef">px</span>) rotateZ(<span style="color:#ae81ff">180</span><span style="color:#66d9ef">deg</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">75</span><span style="color:#f92672">%</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">transform</span>: rotateX(<span style="color:#ae81ff">95</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">-80</span><span style="color:#66d9ef">px</span>) rotateZ(<span style="color:#ae81ff">90</span><span style="color:#66d9ef">deg</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">100</span><span style="color:#f92672">%</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">transform</span>: rotateX(<span style="color:#ae81ff">95</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">-80</span><span style="color:#66d9ef">px</span>) rotateZ(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">cube</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">transform-style</span>: <span style="color:#66d9ef">preserve-3d</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">transform</span>: <span style="color:#66d9ef">all</span> <span style="color:#ae81ff">0.8</span> <span style="color:#66d9ef">ease-in-out</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">animation</span>: rotate <span style="color:#ae81ff">16</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">infinite</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">rotate</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">0</span><span style="color:#f92672">%</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">25</span><span style="color:#f92672">%</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">90</span><span style="color:#66d9ef">deg</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">50</span><span style="color:#f92672">%</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">180</span><span style="color:#66d9ef">deg</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">75</span><span style="color:#f92672">%</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">270</span><span style="color:#66d9ef">deg</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">110</span><span style="color:#f92672">%</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">3600</span><span style="color:#66d9ef">deg</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">img</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">1</span><span style="color:#f92672">)</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">img</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">2</span><span style="color:#f92672">)</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">90</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">img</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">3</span><span style="color:#f92672">)</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">-90</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">img</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">4</span><span style="color:#f92672">)</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">180</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="css-code-explanation">CSS Code Explanation</h2>
+<ol>
+<li>
+<p><strong>Global <code>img</code> Styling</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">img</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">240</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">240</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">backface-visibility</span>: <span style="color:#66d9ef">hidden</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>This block sets the position, size, and backface visibility of all <code>img</code> elements. The <code>backface-visibility</code> property hides the back side of the images.</li>
+</ul>
+</li>
+<li>
+<p><strong>Container Styling</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">container</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">240</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">240</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">perspective</span>: <span style="color:#ae81ff">800</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>The <code>.container</code> class defines the dimensions and perspective for the 3D effect. The <code>perspective</code> property gives a 3D space view to the child elements.</li>
+</ul>
+</li>
+<li>
+<p><strong>Container Shadow Effect</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">container</span>:<span style="color:#a6e22e">before</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#39;&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">box-shadow</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">75</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#000000</span><span style="color:#ae81ff">1</span>a, <span style="color:#66d9ef">inset</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">350</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">350</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">#000000</span><span style="color:#ae81ff">1</span>a;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">90</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">transform</span>: rotateX(<span style="color:#ae81ff">95</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">-80</span><span style="color:#66d9ef">px</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">animation</span>: rotateShadow <span style="color:#ae81ff">16</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">infinite</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Adds a shadow effect to the container using a pseudo-element. The shadow rotates with the animation defined in <code>@keyframes rotateShadow</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Rotate Shadow Animation</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">rotateShadow</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">0</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">transform</span>: rotateX(<span style="color:#ae81ff">95</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">-80</span><span style="color:#66d9ef">px</span>) rotateZ(<span style="color:#ae81ff">360</span><span style="color:#66d9ef">deg</span>); }
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">25</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">transform</span>: rotateX(<span style="color:#ae81ff">95</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">-80</span><span style="color:#66d9ef">px</span>) rotateZ(<span style="color:#ae81ff">270</span><span style="color:#66d9ef">deg</span>); }
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">50</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">transform</span>: rotateX(<span style="color:#ae81ff">95</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">-80</span><span style="color:#66d9ef">px</span>) rotateZ(<span style="color:#ae81ff">180</span><span style="color:#66d9ef">deg</span>); }
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">75</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">transform</span>: rotateX(<span style="color:#ae81ff">95</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">-80</span><span style="color:#66d9ef">px</span>) rotateZ(<span style="color:#ae81ff">90</span><span style="color:#66d9ef">deg</span>); }
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">100</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">transform</span>: rotateX(<span style="color:#ae81ff">95</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">-80</span><span style="color:#66d9ef">px</span>) rotateZ(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>); }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Defines the animation for rotating the shadow effect around the Z-axis.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cube Styling</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">cube</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">transform-style</span>: <span style="color:#66d9ef">preserve-3d</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">transform</span>: <span style="color:#66d9ef">all</span> <span style="color:#ae81ff">0.8</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">ease-in-out</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">animation</span>: rotate <span style="color:#ae81ff">16</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">infinite</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Sets the 3D transformation for the <code>.cube</code> class. The <code>preserve-3d</code> property maintains the 3D position of the children elements. The <code>rotate</code> animation is applied to this element.</li>
+</ul>
+</li>
+<li>
+<p><strong>Rotate Cube Animation</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">rotate</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">0</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>); }
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">25</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">90</span><span style="color:#66d9ef">deg</span>); }
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">50</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">180</span><span style="color:#66d9ef">deg</span>); }
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">75</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">270</span><span style="color:#66d9ef">deg</span>); }
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">100</span><span style="color:#f92672">%</span> { <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">360</span><span style="color:#66d9ef">deg</span>); }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>Defines the keyframes for the rotation animation of the cube around the Y-axis.</li>
+</ul>
+</li>
+<li>
+<p><strong>Individual Image Positioning</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">img</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">1</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>); }
+</span></span><span style="display:flex;"><span><span style="color:#f92672">img</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">2</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">90</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>); }
+</span></span><span style="display:flex;"><span><span style="color:#f92672">img</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">3</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">-90</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>); }
+</span></span><span style="display:flex;"><span><span style="color:#f92672">img</span>:<span style="color:#a6e22e">nth-child</span><span style="color:#f92672">(</span><span style="color:#f92672">4</span><span style="color:#f92672">)</span> { <span style="color:#66d9ef">transform</span>: rotateY(<span style="color:#ae81ff">180</span><span style="color:#66d9ef">deg</span>) translateZ(<span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>); }
+</span></span></code></pre></div><ul>
+<li>Positions each image at the sides of the cube using the <code>nth-child</code> selector. The images are placed at 90-degree intervals around the Y-axis, with each image translated 120px along the Z-axis to create the cube faces.</li>
+</ul>
+</li>
+</ol>
+<h2 id="html-structure">HTML Structure</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">br</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cube&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://assets.lummi.ai/assets/QmW239ythzhEUCVHTDxSzCVaB8wkA16E4hiF6MmNwgRSin?auto=format&amp;w=1500&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://assets.lummi.ai/assets/QmQHKeemS2YCLkdTBgQxyFbgwE2RHFr1F51AVhQFFcKCAy?auto=format&amp;w=1500&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://assets.lummi.ai/assets/QmS3Y6cMYsRAbXF9t5zmRWwqNttpX65Ev9DvykuHsBCFb6?auto=format&amp;w=1500&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://assets.lummi.ai/assets/QmSRo6VjDToFt3xUhNZV2qWBDDq4UPSEsbaq8Es2B5aP1i?auto=format&amp;w=1500&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><p>The HTML creates a container div that holds the rotating cube. Inside the cube div, there are four images, each representing a side of the cube. The CSS handles the 3D rotation and positioning of these images to create a cube effect.</p>
+
+        </div>
+    </div>
+    <a href="#" id="scrollToTopButton">
+        <svg t="1686753152588" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            p-id="3988" width="48" height="48">
+            <path
+                d="M518.5 360.3c-3.2-4.4-9.7-4.4-12.9 0l-178 246c-3.8 5.3 0 12.7 6.5 12.7H381c10.2 0 19.9-4.9 25.9-13.2L512 460.4l105.2 145.4c6 8.3 15.6 13.2 25.9 13.2H690c6.5 0 10.3-7.4 6.5-12.7l-178-246z"
+                p-id="3989" fill="#363636"></path>
+            <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64z m0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+                p-id="3990" fill="#363636"></path>
+        </svg>
+    </a>
+
+<div class="pp-container">
+        <section class="pre-and-post">
+            <div class="has-text-left">
+                
+                <p>Previous post</p>
+                <a href="https://vimsaldev.github.io/code_showcase/post/test3/">Test3</a>
+                
+            </div>
+            <div class="has-text-right">
+                
+            </div>
+        </section>
+    </div>
+
+</div>
+
+        </main><footer class="footer">
+    <div class="content has-text-centered">
+    <span>&copy; 2024 <a href="https://vimsaldev.github.io/code_showcase/">Code Showcase</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" target="_blank">Hugo</a> &
+        <a href="https://github.com/hotjuicew/hugo-JuiceBar" target="_blank">JuiceBar</a>
+    </span>
+    </div>
+  </footer></body>
+</html>
+

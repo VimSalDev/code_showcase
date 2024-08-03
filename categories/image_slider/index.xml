@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Image_Slider on Code Showcase</title>
+    <link>https://vimsaldev.github.io/code_showcase/categories/image_slider/</link>
+    <description>Recent content in Image_Slider on Code Showcase</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Aug 2024 21:55:28 -0600</lastBuildDate><atom:link href="https://vimsaldev.github.io/code_showcase/categories/image_slider/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3D Image Slider</title>
+      <link>https://vimsaldev.github.io/code_showcase/post/3d_image_slider/</link>
+      <pubDate>Fri, 02 Aug 2024 21:55:28 -0600</pubDate>
+      
+      <guid>https://vimsaldev.github.io/code_showcase/post/3d_image_slider/</guid>
+      <description>This example demonstrates a 3D rotating cube using CSS animations and transformations. The cube rotates around the Y-axis, and each side of the cube displays a different image. HTML Code &amp;lt;div class=&amp;#34;container&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;cube&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;https://assets.lummi.ai/assets/QmW239ythzhEUCVHTDxSzCVaB8wkA16E4hiF6MmNwgRSin?auto=format&amp;amp;w=1500&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;https://assets.lummi.ai/assets/QmQHKeemS2YCLkdTBgQxyFbgwE2RHFr1F51AVhQFFcKCAy?auto=format&amp;amp;w=1500&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;https://assets.lummi.ai/assets/QmS3Y6cMYsRAbXF9t5zmRWwqNttpX65Ev9DvykuHsBCFb6?auto=format&amp;amp;w=1500&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;https://assets.lummi.ai/assets/QmSRo6VjDToFt3xUhNZV2qWBDDq4UPSEsbaq8Es2B5aP1i?auto=format&amp;amp;w=1500&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; CSS Code img { position: absolute; width: 240px; height: 240px; backface-visibility: hidden; } .container { width: 240px; height: 240px; perspective: 800px; } .container:before { content: &amp;#39;&amp;#39;; width: 100%; height: 100%; box-shadow: 0 0 75px 20px #0000001a, inset 0 0 350px 350px #0000001a; position: absolute; top: 90px; left: 0px; transform: rotateX(95deg) translateZ(-80px); animation: rotateShadow 16s infinite; } @keyframes rotateShadow { 0% { transform: rotateX(95deg) translateZ(-80px) rotateZ(360deg); } 25% { transform: rotateX(95deg) translateZ(-80px) rotateZ(270deg); } 50% { transform: rotateX(95deg) translateZ(-80px) rotateZ(180deg); } 75% { transform: rotateX(95deg) translateZ(-80px) rotateZ(90deg); } 100% { transform: rotateX(95deg) translateZ(-80px) rotateZ(0deg); } } .</description>
+    </item>
+    
+  </channel>
+</rss>
